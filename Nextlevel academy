@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextLevel Academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f8fb;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #0070f3, #00c6ff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      color: #0070f3;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    section p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: #0070f3;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #005bb5;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    /* Caixas de formulário */
+    .form-box {
+      background: white;
+      padding: 20px;
+      max-width: 400px;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .form-box input, .form-box select {
+      width: 95%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    .form-box button {
+      background: #0070f3;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      width: 100%;
+    }
+    .form-box button:hover {
+      background: #005bb5;
+    }
+    /* Botão fixo do WhatsApp */
+    .whatsapp-fixo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    .whatsapp-fixo:hover {
+      background: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextLevel Academy</h1>
+    <p>Oportunidade para todos, independente da classe social</p>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Área de login -->
+  <section id="login">
+    <h2>Área do Aluno</h2>
+    <p>Entre com o <b>Gmail cadastrado na NextLevel Academy</b> para acessar seu perfil e currículo.</p>
+    <div class="form-box">
+      <input type="email" placeholder="Digite seu Gmail cadastrado" required>
+      <input type="password" placeholder="Digite sua senha" required>
+      <button>Entrar</button>
+      <br><br>
+      <!-- Botão de cadastro -->
+      <a href="#cadastro" class="btn">Cadastre-se</a>
+    </div>
+  </section>
+
+  <!-- Página de cadastro -->
+  <section id="cadastro">
+    <h2>Cadastro de Aluno</h2>
+    <p>Preencha os dados abaixo para criar sua conta e acessar os cursos.</p>
+    <div class="form-box">
+      <input type="text" placeholder="Nome completo" required>
+      <input type="email" placeholder="Seu Gmail" required>
+      <input type="password" placeholder="Crie uma senha" required>
+      <select required>
+        <option value="">Selecione um curso</option>
+        <option value="ingles">Inglês Intensivo</option>
+        <option value="eletrotecnica">Eletrotécnica</option>
+        <option value="automacao">Automação</option>
+        <option value="mentalidade">Mentalidade de Sucesso</option>
+        <option value="financeiro">Independência Financeira</option>
+      </select>
+      <button>Cadastrar</button>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A NextLevel Academy é uma escola de cursos acessíveis que acredita que todos podem alcançar o sucesso, independentemente da condição financeira.</p>
+  </section>
+
+  <section id="cursos">
+    <h2>Nossos Cursos</h2>
+    <p>✔ Inglês intensivo<br>
+       ✔ Eletrotécnica<br>
+       ✔ Automação<br>
+       ✔ Mentalidade de Sucesso<br>
+       ✔ Como conquistar independência financeira</p>
+    <a href="#contato" class="btn">Quero me inscrever</a>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: nextlevelacademy270925@gmail.com</p>
+    <p>WhatsApp: <a href="https://wa.me/5541997257434" target="_blank">📱 (41) 99725-7434</a></p>
+    <a href="https://wa.me/5541997257434" class="btn" target="_blank">Chamar no WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextLevel Academy - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão fixo de WhatsApp -->
+  <a href="https://wa.me/5541997257434" class="whatsapp-fixo" target="_blank">💬 WhatsApp</a>
+</body>
+</html>
